@@ -1,9 +1,9 @@
 /* Lightbox setup */
-input.lightbox {
+input[name=lightbox] {
   display: none;
 }
 
-input.lightbox:checked + .lightbox-overlay {
+input[name=lightbox]:checked + .lightbox-overlay {
   display: table;
 }
 
