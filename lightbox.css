@@ -1,0 +1,67 @@
+/* Lightbox setup */
+input.lightbox {
+  display: none;
+}
+
+input.lightbox:checked + .lightbox-overlay {
+  display: table;
+}
+
+.lightbox-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+}
+
+.lightbox-overlay label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.lightbox-content {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  cursor: auto;
+  position: relative;
+}
+
+.lightbox-content .lightbox-inner-content {
+  display: block;
+  overflow-y: auto;
+}
+
+#lightbox-close {
+  display: none;
+}
+
+.lightbox-close-x {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+}
+
+/* Lightbox styles */
+
+.lightbox-overlay {
+  background: rgba(0,0,0,0.5);
+}
+
+.lightbox-content {
+  padding: 20px;
+  background: #fff;
+  color: #000;
+  width: 460px;
+}
+
+.lightbox-close-x:hover {
+  background: #aaaaaa;
+  text-shadow: 1px 1px 1px #ccc;
+}
